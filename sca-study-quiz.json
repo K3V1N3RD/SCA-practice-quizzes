@@ -1,0 +1,1283 @@
+{
+  "formatVersion": 1,
+  "metadata": {
+    "title": "SCA Study Quiz",
+    "description": "Study Quiz Questions for SCA",
+    "author": "Geeko",
+    "creationDate": "2026-06-24"
+  },
+  "generator": {
+    "application": "LocalQuizEngine",
+    "version": "1.0"
+  },
+  "questions": [
+    {
+      "question": "From the time SLES is released how many years is it supported for without LTSS?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "9",
+          "correct": false
+        },
+        {
+          "text": "12",
+          "correct": false
+        },
+        {
+          "text": "13",
+          "correct": true
+        },
+        {
+          "text": "17",
+          "correct": false
+        },
+        {
+          "text": "5",
+          "correct": false
+        },
+        {
+          "text": "10",
+          "correct": false
+        },
+        {
+          "text": "20",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of the following are extensions available for SUSE Linux Enterprise Server? (Select 2)",
+      "type": "multiple",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "Base System",
+          "correct": false
+        },
+        {
+          "text": "Live Patching",
+          "correct": true
+        },
+        {
+          "text": "Containers",
+          "correct": false
+        },
+        {
+          "text": "High Availability",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Which statement is true about Package Hub?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "All packages are supported by SUSE",
+          "correct": false
+        },
+        {
+          "text": "Packages from Package Hub require an additional subscription",
+          "correct": false
+        },
+        {
+          "text": "No packages from package hub are supported by SUSE",
+          "correct": true
+        },
+        {
+          "text": "Only packages flagged with an S are supported by SUSE",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "After a service pack for SLES is released how many months is the previous service pack supported for?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "3",
+          "correct": false
+        },
+        {
+          "text": "12",
+          "correct": false
+        },
+        {
+          "text": "18",
+          "correct": false
+        },
+        {
+          "text": "6",
+          "correct": true
+        },
+        {
+          "text": "1",
+          "correct": false
+        },
+        {
+          "text": "10",
+          "correct": false
+        },
+        {
+          "text": "20",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of the following describes the options available when SLES reaches GE (end of general support)?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "The product will continue to run but with reduced functionality",
+          "correct": false
+        },
+        {
+          "text": "An additional LTSS subscription can be purchased which extends support beyond GE",
+          "correct": true
+        },
+        {
+          "text": "Support is provided for another 6 months beyond GE",
+          "correct": false
+        },
+        {
+          "text": "Only patches for critical security vulnerabilities will be published and made available",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which command lists the currently configured aliases for a user?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "echo $ALIASES",
+          "correct": false
+        },
+        {
+          "text": "alias",
+          "correct": true
+        },
+        {
+          "text": "set",
+          "correct": false
+        },
+        {
+          "text": "env",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which command lists the files in the current directory including the hidden files and also displays the file type?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "ls",
+          "correct": false
+        },
+        {
+          "text": "ls -l",
+          "correct": false
+        },
+        {
+          "text": "ls -al",
+          "correct": true
+        },
+        {
+          "text": "ls -a",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which command changes a user into their home directory?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "cd home",
+          "correct": false
+        },
+        {
+          "text": "cd ..",
+          "correct": false
+        },
+        {
+          "text": "cd .",
+          "correct": false
+        },
+        {
+          "text": "cd",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "What does the following command do? ``find / -name ntp.*``",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "Searches starting in the current directory for directories",
+          "correct": false
+        },
+        {
+          "text": "Searches in the current directory for all files containing the string ntp.*",
+          "correct": false
+        },
+        {
+          "text": "Searching starting in the root (/) directory for file names starting with ntp. followed by zero or more characters",
+          "correct": true
+        },
+        {
+          "text": "Searches starting in the users home directory for files that match the pattern ntp.*",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is the default shell for new users created on a SLES system?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "csh",
+          "correct": false
+        },
+        {
+          "text": "bash",
+          "correct": true
+        },
+        {
+          "text": "zsh",
+          "correct": false
+        },
+        {
+          "text": "ksh",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "How many different types of regular expression can the grep command use?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "2",
+          "correct": false
+        },
+        {
+          "text": "4",
+          "correct": false
+        },
+        {
+          "text": "3",
+          "correct": true
+        },
+        {
+          "text": "1",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which directory contains programs required for system administrative tasks?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "/home",
+          "correct": false
+        },
+        {
+          "text": "/root",
+          "correct": false
+        },
+        {
+          "text": "/bin",
+          "correct": false
+        },
+        {
+          "text": "/sbin",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Which Linux file type is associated with storage devices?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "Block device files",
+          "correct": true
+        },
+        {
+          "text": "Pipes and Sockets",
+          "correct": false
+        },
+        {
+          "text": "Directory files",
+          "correct": false
+        },
+        {
+          "text": "Regular files",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What does the data block of a symbolic link file contain?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "The directory structure",
+          "correct": false
+        },
+        {
+          "text": "The path to the target file",
+          "correct": true
+        },
+        {
+          "text": "Raw data",
+          "correct": false
+        },
+        {
+          "text": "The inode number of the target file",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which command will search for all XXX and replace with YYY?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": ":%r/XXX/YYY/all",
+          "correct": false
+        },
+        {
+          "text": ":%s/XXX/YYY/g",
+          "correct": true
+        },
+        {
+          "text": ":%s/YYY/XXX/g",
+          "correct": false
+        },
+        {
+          "text": ":%r/YYY/XXX/all",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which command allows the content of multiple text files to be compared and edited if required?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "vimdiff",
+          "correct": true
+        },
+        {
+          "text": "diffvim",
+          "correct": false
+        },
+        {
+          "text": "vnew",
+          "correct": false
+        },
+        {
+          "text": "vmcompare",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which file must be created to configure Vim for a user?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "~/.vim.conf",
+          "correct": false
+        },
+        {
+          "text": "/etc/vimrc",
+          "correct": false
+        },
+        {
+          "text": "~/vimrc",
+          "correct": false
+        },
+        {
+          "text": "~/.vimrc",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "After configuring the NTP service on your SUSE Linux Enterprise Server Version 15 system, what command can you run to get detailed information about the time server's activity?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "The chronyc command with the keyword sources will give some information. However, the -v option will give detailed information about the time server's activity.",
+      "answers": [
+        {
+          "text": "chronyc details -v",
+          "correct": false
+        },
+        {
+          "text": "chronyc config -v",
+          "correct": false
+        },
+        {
+          "text": "chronyc sources -v",
+          "correct": true
+        },
+        {
+          "text": "chronyc timeserver -v",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "When configuring accurate system time, what model is a representation of the time server hierarchy?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "NTP Servers are arranged in what is called Stratum. Stratum 1 is attached to an authoritative time source and usually extend to 7 layers of servers.",
+      "answers": [
+        {
+          "text": "Stratum",
+          "correct": true
+        },
+        {
+          "text": "Layers",
+          "correct": false
+        },
+        {
+          "text": "Expansion",
+          "correct": false
+        },
+        {
+          "text": "Structure",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "You need systemd logging information about the chronyd service. Which of the following will only show journal entries having to do with chronyd?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "Using the -u for unit followed by a unit name will show just the log entries that pertain to the specified unit.",
+      "answers": [
+        {
+          "text": "journalctl -t chronyd",
+          "correct": false
+        },
+        {
+          "text": "journalctl -k chronyd",
+          "correct": false
+        },
+        {
+          "text": "journalctl -f chronyd",
+          "correct": false
+        },
+        {
+          "text": "journalctl -u chronyd",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "When configuring system logging on a SUSE Linux Enterprise Server Version 15, what logging services are available by default? (select all that apply)",
+      "type": "multiple",
+      "displayAnswers": 4,
+      "explanation": "The two configured by default system logging methods for SUSE Linux Enterprise Server Version 15 are Rsyslog and systemd journals.",
+      "answers": [
+        {
+          "text": "syslog-ng",
+          "correct": false
+        },
+        {
+          "text": "systemd-journal",
+          "correct": true
+        },
+        {
+          "text": "Rsyslog",
+          "correct": true
+        },
+        {
+          "text": "syslog",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What utility would you use to make a change to the name or Group ID of an existing group on the system?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "The groupmod command is designed to modify group information.",
+      "answers": [
+        {
+          "text": "groupmod",
+          "correct": true
+        },
+        {
+          "text": "chown",
+          "correct": false
+        },
+        {
+          "text": "chgrp",
+          "correct": false
+        },
+        {
+          "text": "groupdel",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What setfacl option will remove an Extended ACL entry, leaving the rest of the ACL intact?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "The -x option will remove an ACL entry, leaving the rest intact.\n",
+      "answers": [
+        {
+          "text": "-f",
+          "correct": false
+        },
+        {
+          "text": "-x",
+          "correct": true
+        },
+        {
+          "text": "-r",
+          "correct": false
+        },
+        {
+          "text": "--remove-all",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What file contains the mapping of a user's ID to their username?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "The user ID to username mapping is in the /etc/passwd file alone.",
+      "answers": [
+        {
+          "text": "/etc/shadow",
+          "correct": false
+        },
+        {
+          "text": "/etc/username",
+          "correct": false
+        },
+        {
+          "text": "/etc/passwd",
+          "correct": true
+        },
+        {
+          "text": "/etc/group",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What command is typically used to alter the password aging information contained in the /etc/shadow file?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "The chage command is used to alter the password aging information in /etc/shadow.",
+      "answers": [
+        {
+          "text": "strongpass",
+          "correct": false
+        },
+        {
+          "text": "chage",
+          "correct": true
+        },
+        {
+          "text": "chpass",
+          "correct": false
+        },
+        {
+          "text": "chpw",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "If you want to go directly to the man page for the system's cron daemon configuration file, what section of the man command will you look in?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "Section 5 is for configuration files.",
+      "answers": [
+        {
+          "text": "Section 5",
+          "correct": true
+        },
+        {
+          "text": "Section 8",
+          "correct": false
+        },
+        {
+          "text": "Section 1",
+          "correct": false
+        },
+        {
+          "text": "Section 6",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "If you want to find the “EXAMPLES” section inside of a man page, which of the following searches would you use?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "The section text always starts at the same position, the first character of a line, so using the ^ character ensures you find \"EXAMPLES\", not \"examples\" in the text.",
+      "answers": [
+        {
+          "text": "/^EXAMPLES",
+          "correct": true
+        },
+        {
+          "text": "/EXAMPLES",
+          "correct": false
+        },
+        {
+          "text": "/%s/EXAMPLES",
+          "correct": false
+        },
+        {
+          "text": "/EXAMPLES$",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "You want to gain information about a command, including where it is on disk and any related man page. Which of the following commands will most directly show you this information?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "The whereis command shows exactly this information for any command it finds in the user's path.",
+      "answers": [
+        {
+          "text": "man",
+          "correct": false
+        },
+        {
+          "text": "whatis",
+          "correct": false
+        },
+        {
+          "text": "ls",
+          "correct": false
+        },
+        {
+          "text": "whereis",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "If you want to set a variable for the use of all users, what file should it be placed in?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "The /etc/profile file is where you set up variables for use by all users.",
+      "answers": [
+        {
+          "text": "/etc/bashvar",
+          "correct": false
+        },
+        {
+          "text": "/etc/inputrc",
+          "correct": false
+        },
+        {
+          "text": "/etc/bashrc",
+          "correct": false
+        },
+        {
+          "text": "/etc/profile",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "When you use ``su -`` for privilege elevation, what kind of login occurs?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "A login shell is performed when you use the su command and the minus symbol.",
+      "answers": [
+        {
+          "text": "CLI",
+          "correct": false
+        },
+        {
+          "text": "Interactive",
+          "correct": false
+        },
+        {
+          "text": "GUI",
+          "correct": false
+        },
+        {
+          "text": "Login",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "You need to automatically query the exit code of a script immediately after it’s executed. What special system variable will accomplish this when used with echo?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "The $? variable shows the previous command’s exit code.",
+      "answers": [
+        {
+          "text": "$#",
+          "correct": false
+        },
+        {
+          "text": "$?",
+          "correct": true
+        },
+        {
+          "text": "$$",
+          "correct": false
+        },
+        {
+          "text": "$0",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which commands could you use to determine the proper syntax for the cp command? (Select all that apply)",
+      "type": "multiple",
+      "displayAnswers": 7,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "man cp",
+          "correct": true
+        },
+        {
+          "text": "help cp",
+          "correct": false
+        },
+        {
+          "text": "cp --help",
+          "correct": true
+        },
+        {
+          "text": "doc -cp",
+          "correct": false
+        },
+        {
+          "text": "display cp",
+          "correct": false
+        },
+        {
+          "text": "info --cp help",
+          "correct": false
+        },
+        {
+          "text": "info cp",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Which statement describes what the following bash command does: ``command1 | command2``",
+      "type": "single",
+      "displayAnswers": 5,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "This construct states that command2 will execute only if command1 returns an error.",
+          "correct": false
+        },
+        {
+          "text": "The output from command1 is used as input for command2.",
+          "correct": true
+        },
+        {
+          "text": "The output from command2 is taken as the input for command1.",
+          "correct": false
+        },
+        {
+          "text": "This construct states that if command1 generates any errors that command2 will process those error messages.",
+          "correct": false
+        },
+        {
+          "text": "This statement will always generate an error because it does not employ valid syntax.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which shell command will display a detailed listing of the /etc directory?",
+      "type": "single",
+      "displayAnswers": 5,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "dir –d /etc",
+          "correct": false
+        },
+        {
+          "text": "list /etc",
+          "correct": false
+        },
+        {
+          "text": "ls –l /etc",
+          "correct": true
+        },
+        {
+          "text": "ls ~/etc",
+          "correct": false
+        },
+        {
+          "text": "dir –d ~/etc",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What does the following command allow you to do?: ``alias c=”clear”``",
+      "type": "single",
+      "displayAnswers": 5,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "You can type clear to run the c command.",
+          "correct": false
+        },
+        {
+          "text": "It allows you to rename the clear command to just c and then deletes the clear command.",
+          "correct": false
+        },
+        {
+          "text": "It launches a second Login Shell and allows you to rename the clear command to just c.",
+          "correct": false
+        },
+        {
+          "text": "You can type c to run the clear command.",
+          "correct": true
+        },
+        {
+          "text": "Nothing, since there is not a command named alias.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which keystroke can be used to auto-complete a command?",
+      "type": "single",
+      "displayAnswers": 6,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "Tab",
+          "correct": true
+        },
+        {
+          "text": "Shift",
+          "correct": false
+        },
+        {
+          "text": "Shift + Alt + T",
+          "correct": false
+        },
+        {
+          "text": "Ctrl + ZZ",
+          "correct": false
+        },
+        {
+          "text": "Tab + Shift",
+          "correct": false
+        },
+        {
+          "text": "Alt + Tab",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "The command ``man ls`` is equivalent to:",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "The man program searches through manual sections and picks the first match it finds. ``man ls`` shows the ls(1) man page in its entirety. It is equivalent to: ``man 1 ls``",
+      "answers": [
+        {
+          "text": "``man 3 ls``",
+          "correct": false
+        },
+        {
+          "text": "``man 2 ls``",
+          "correct": false
+        },
+        {
+          "text": "``man 1 ls``",
+          "correct": true
+        },
+        {
+          "text": "``man 4 ls``",
+          "correct": false
+        },
+        {
+          "text": "``man page ls``",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "The \"User commands (Programs)\" section of the manual is which number?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "The \"User commands (Programs)\" section of the manual is number 1.\n",
+      "answers": [
+        {
+          "text": "1",
+          "correct": true
+        },
+        {
+          "text": "2",
+          "correct": false
+        },
+        {
+          "text": "3",
+          "correct": false
+        },
+        {
+          "text": "4",
+          "correct": false
+        },
+        {
+          "text": "5",
+          "correct": false
+        },
+        {
+          "text": "6",
+          "correct": false
+        },
+        {
+          "text": "7",
+          "correct": false
+        },
+        {
+          "text": "8",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "The \"System calls\" section of the manual is which number?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "The \"System calls\" section of the manual is number 2.",
+      "answers": [
+        {
+          "text": "1",
+          "correct": false
+        },
+        {
+          "text": "2",
+          "correct": true
+        },
+        {
+          "text": "3",
+          "correct": false
+        },
+        {
+          "text": "4",
+          "correct": false
+        },
+        {
+          "text": "5",
+          "correct": false
+        },
+        {
+          "text": "6",
+          "correct": false
+        },
+        {
+          "text": "7",
+          "correct": false
+        },
+        {
+          "text": "8",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "The \"Library calls\" section of the manual is which number?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "The \"Library calls\" section of the manual is number 3.",
+      "answers": [
+        {
+          "text": "1",
+          "correct": false
+        },
+        {
+          "text": "2",
+          "correct": false
+        },
+        {
+          "text": "3",
+          "correct": true
+        },
+        {
+          "text": "4",
+          "correct": false
+        },
+        {
+          "text": "5",
+          "correct": false
+        },
+        {
+          "text": "6",
+          "correct": false
+        },
+        {
+          "text": "7",
+          "correct": false
+        },
+        {
+          "text": "8",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "The \"Devices (Special Files)\" section of the manual is which number?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "The \"Devices (Special Files)\" section of the manual is number 4.\n",
+      "answers": [
+        {
+          "text": "1",
+          "correct": false
+        },
+        {
+          "text": "2",
+          "correct": false
+        },
+        {
+          "text": "3",
+          "correct": false
+        },
+        {
+          "text": "4",
+          "correct": true
+        },
+        {
+          "text": "5",
+          "correct": false
+        },
+        {
+          "text": "6",
+          "correct": false
+        },
+        {
+          "text": "7",
+          "correct": false
+        },
+        {
+          "text": "8",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "The \"File formats/configuration\" section of the manual is which number?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "The \"File formats/configuration\" section of the manual is number 5.",
+      "answers": [
+        {
+          "text": "1",
+          "correct": false
+        },
+        {
+          "text": "2",
+          "correct": false
+        },
+        {
+          "text": "3",
+          "correct": false
+        },
+        {
+          "text": "4",
+          "correct": false
+        },
+        {
+          "text": "5",
+          "correct": true
+        },
+        {
+          "text": "6",
+          "correct": false
+        },
+        {
+          "text": "7",
+          "correct": false
+        },
+        {
+          "text": "8",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "The \"Games\" section of the manual is which number?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "The \"Games\" section of the manual is number 6.",
+      "answers": [
+        {
+          "text": "1",
+          "correct": false
+        },
+        {
+          "text": "2",
+          "correct": false
+        },
+        {
+          "text": "3",
+          "correct": false
+        },
+        {
+          "text": "4",
+          "correct": false
+        },
+        {
+          "text": "5",
+          "correct": false
+        },
+        {
+          "text": "6",
+          "correct": true
+        },
+        {
+          "text": "7",
+          "correct": false
+        },
+        {
+          "text": "8",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "The \"Miscellaneous\" section of the manual is which number?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "The \"Miscellaneous\" section of the manual is number 7.\n",
+      "answers": [
+        {
+          "text": "1",
+          "correct": false
+        },
+        {
+          "text": "2",
+          "correct": false
+        },
+        {
+          "text": "3",
+          "correct": false
+        },
+        {
+          "text": "4",
+          "correct": false
+        },
+        {
+          "text": "5",
+          "correct": false
+        },
+        {
+          "text": "6",
+          "correct": false
+        },
+        {
+          "text": "7",
+          "correct": true
+        },
+        {
+          "text": "8",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "The \"System administration (management commands)\" section of the manual is which number?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "The \"System administration (management commands)\" section of the manual is number 8.",
+      "answers": [
+        {
+          "text": "1",
+          "correct": false
+        },
+        {
+          "text": "2",
+          "correct": false
+        },
+        {
+          "text": "3",
+          "correct": false
+        },
+        {
+          "text": "4",
+          "correct": false
+        },
+        {
+          "text": "5",
+          "correct": false
+        },
+        {
+          "text": "6",
+          "correct": false
+        },
+        {
+          "text": "7",
+          "correct": false
+        },
+        {
+          "text": "8",
+          "correct": true
+        }
+      ]
+    }
+  ]
+}
