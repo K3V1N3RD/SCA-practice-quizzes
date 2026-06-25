@@ -4,7 +4,7 @@
     "title": "SCA Study Quiz",
     "description": "Study Quiz Questions for SCA",
     "author": "Geeko",
-    "creationDate": "2026-06-24"
+    "creationDate": "2026-06-25"
   },
   "generator": {
     "application": "LocalQuizEngine",
@@ -1276,6 +1276,94 @@
         {
           "text": "8",
           "correct": true
+        }
+      ]
+    },
+    {
+      "question": "What does the following command do?: mount /dev/sdb2 /source",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "The command in question 46 matches the mount command run in this standard form described in the manual:\nmount [-fnrsvw] [-o options] [-t fstype] device mountpoint\n\nIn this form, all options are optional (denoted by the surrounding []), and the first argument is the device being mounted and the second argument is the mountpoint.\n\nSo, the first argument in the command in the question, /dev/sdb2, is the device being mounted.\n\nAnd the second argument, /source, is the specified mountpoint. ",
+      "answers": [
+        {
+          "text": "Mounts /source on /dev/sdb2",
+          "correct": false
+        },
+        {
+          "text": "Shows the details of the mount point /source",
+          "correct": false
+        },
+        {
+          "text": "Mounts the filesystem on /dev/sdb2 on the directory /source",
+          "correct": true
+        },
+        {
+          "text": "Displays the entry in /etc/fstab for /dev/sdb2",
+          "correct": false
+        },
+        {
+          "text": "Mounts the /source directory on a remote server to /dev/sdb2 on the local server.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which log file is a good place to start when starting the troubleshooting process?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "Of the possible options, /var/log/messages is the only real log file. There is a lastlog file in /var/log (not /var), but this contains logs related to login records and its contents are meant to be viewed with the `last` command.",
+      "answers": [
+        {
+          "text": "/var/lastlog",
+          "correct": false
+        },
+        {
+          "text": "/var/boot.log",
+          "correct": false
+        },
+        {
+          "text": "/var/log/messages",
+          "correct": true
+        },
+        {
+          "text": "/var/supportconfig",
+          "correct": false
+        },
+        {
+          "text": "/var/faillog",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "If there is a device /dev/sdb containing partitions, what is the device name for the first partition on the device? Give the full path and filename.",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "Device names are stored in /dev, and the partitions are given numbers and named after the device they are contained on.\n\nSo, for example, if /dev/sdb has 3 partitions, the first would be /dev/sdb1 and the second /dev/sdb2 and so on.",
+      "answers": [
+        {
+          "text": "/dev/sdb",
+          "correct": false
+        },
+        {
+          "text": "/dev/disk/sdb1",
+          "correct": false
+        },
+        {
+          "text": "/dev/sdb1",
+          "correct": true
+        },
+        {
+          "text": "/sys/sdb1",
+          "correct": false
+        },
+        {
+          "text": "sys/sdb",
+          "correct": false
+        },
+        {
+          "text": "/mnt/sdb5",
+          "correct": false
         }
       ]
     }
