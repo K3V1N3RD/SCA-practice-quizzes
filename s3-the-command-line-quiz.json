@@ -1,0 +1,1247 @@
+{
+  "formatVersion": 1,
+  "metadata": {
+    "title": "The Command Line",
+    "description": "These questions are intended to cover the content of Section 3 The Command Line from the SLE201v15 course on Litmos",
+    "author": "Marshall Banana",
+    "creationDate": "2026-06-25"
+  },
+  "generator": {
+    "application": "LocalQuizEngine",
+    "version": "1.0"
+  },
+  "questions": [
+    {
+      "question": "Which of these shells are used by default on SLES?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "bash",
+          "correct": true
+        },
+        {
+          "text": "dash",
+          "correct": false
+        },
+        {
+          "text": "fish",
+          "correct": false
+        },
+        {
+          "text": "PowerShell",
+          "correct": false
+        },
+        {
+          "text": "zsh",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Bash stands for...?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "Beta Almquist SHell",
+          "correct": false
+        },
+        {
+          "text": "Bourne Again SHell",
+          "correct": true
+        },
+        {
+          "text": "BAnSHee",
+          "correct": false
+        },
+        {
+          "text": "Beta Alpha SHell",
+          "correct": false
+        },
+        {
+          "text": "Byte Again SHell",
+          "correct": false
+        },
+        {
+          "text": "Brad Adams SHell",
+          "correct": false
+        },
+        {
+          "text": "Bash is A SHell",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of these is an example of a \"short option\"?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "\"short options\", also called \"Unix options\" in the `ps` manual, have one single `-` and one single letter.",
+      "answers": [
+        {
+          "text": "-m",
+          "correct": true
+        },
+        {
+          "text": "--m",
+          "correct": false
+        },
+        {
+          "text": "-mode",
+          "correct": false
+        },
+        {
+          "text": "--mode",
+          "correct": false
+        },
+        {
+          "text": "m",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of these is an example of a \"long option\"?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "\"long options\", also called \"\"GNU long options\" in the `ps` manual, have two `-` and a complete word, not a single letter.",
+      "answers": [
+        {
+          "text": "-p",
+          "correct": false
+        },
+        {
+          "text": "--p",
+          "correct": false
+        },
+        {
+          "text": "-page",
+          "correct": false
+        },
+        {
+          "text": "--paginate",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Most commands have both short and long options. Do you need to use only short or long options in each command? Or can a single command contain both long and short options?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "If a command has both short and long options, these can always be mixed. Some commands only have short options, like `cd` and `umask`, but these seem to be really rare and I think they are always shell built-ins and not standalone programs.",
+      "answers": [
+        {
+          "text": "A single command may have both long and short options",
+          "correct": true
+        },
+        {
+          "text": "You must use only short options or long options with each command.",
+          "correct": false
+        },
+        {
+          "text": "The answer depends on the specific command.",
+          "correct": false
+        },
+        {
+          "text": "The answer depends on the shell being used.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Does a command always have output?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "Some commands do not produce any output and some do. It just depends on the goals/design of that command.\n\nFun Fact: If a command's output is redirected to /dev/null, it would still be said to have produced output, but that output would not be visible on the screen and would not be saved anywhere by the system.",
+      "answers": [
+        {
+          "text": "yes, every command produces output somewhere",
+          "correct": false
+        },
+        {
+          "text": "no, some commands produce no output at all",
+          "correct": true
+        },
+        {
+          "text": "a command only produces no output if it is redirected to /dev/null",
+          "correct": false
+        },
+        {
+          "text": "commands run on the GUI produce no output but commands run on the CLI always have output",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which character separates the directories in the PATH variable?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "It has to be a colon ':'. This is defined in POSIX standard and hard coded into like every program and C function that has to interpret PATH.\n\nFun Fact: There is no way to escape characters in the PATH, and for this reason, directories in the PATH should not have a colon in their filename. If you have to put a directory in PATH that has a colon in the name for some reason, setup a link that points to this directory and that does not contain a colon and include that in the PATH instead.",
+      "answers": [
+        {
+          "text": ":",
+          "correct": true
+        },
+        {
+          "text": ";",
+          "correct": false
+        },
+        {
+          "text": ",",
+          "correct": false
+        },
+        {
+          "text": "space",
+          "correct": false
+        },
+        {
+          "text": "-",
+          "correct": false
+        },
+        {
+          "text": "/",
+          "correct": false
+        },
+        {
+          "text": "%",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What does the which command show in its output?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "The directory that contains the given command",
+          "correct": false
+        },
+        {
+          "text": "The absolute filename of all instances of the given command in the PATH",
+          "correct": false
+        },
+        {
+          "text": "The absolute filename of the specific file that will be run by the given command.",
+          "correct": true
+        },
+        {
+          "text": "The relative filename of the given command relative to /bin",
+          "correct": false
+        },
+        {
+          "text": "The filename of the given command and the filename of the manual page describing it.",
+          "correct": false
+        },
+        {
+          "text": "The libraries that are linked to the binary for the given command.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Control characters are all sent using combinations of the Ctrl key and another key.",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "Many control characters are sent with Ctrl+ combinations, but some are sent by other means like pressing TAB (that's for tab completion), ENTER (for newline), and ESC (used by bash for other combinations such as ESC + .). There are also Alt+ key combinations that send control characters, but these are not the same as the Ctrl+ combinations. Control characters may also be sent using octal or hexadecimal values that get interpreted and consumed by the shell, so they can be sent by some other processes. For example, you can get `echo` to send the beep octet to the shell by running this command:\necho -e \"\\007\"\n\nThis is the mechanism by which terminal emulators produce the charming chimes that let you know you pushed backspace too many times or whatever.\n\nFun fact: the actual octal escape sequence used in the echo example is \"07\". The -e flag enables escape characters, and the combination \"\\0\" is how you tell the echo program to interpret the argument as an octal escape sequence. ",
+      "answers": [
+        {
+          "text": "True",
+          "correct": false
+        },
+        {
+          "text": "False, sometimes other keys or actions will cause control characters to be sent.",
+          "correct": true
+        },
+        {
+          "text": "It depends on the shell being used",
+          "correct": false
+        },
+        {
+          "text": "Alt+ can be used instead of Ctrl+ for the same control character",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which key combination will logout/exit the current shell session?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "Ctrl+d",
+          "correct": true
+        },
+        {
+          "text": "Ctrl+e",
+          "correct": false
+        },
+        {
+          "text": "Ctrl+l",
+          "correct": false
+        },
+        {
+          "text": "Ctrl+Alt+d",
+          "correct": false
+        },
+        {
+          "text": "Ctrl+c",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which key combination terminates the current program?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "Fun fact: Entering this causes the kernel to send the IPC (Inter-process communication) signal called \"SIGINT\". See man 7 signal if you've got it and install man-pages package if you don't.",
+      "answers": [
+        {
+          "text": "Ctrl+d",
+          "correct": false
+        },
+        {
+          "text": "Ctrl+c",
+          "correct": true
+        },
+        {
+          "text": "Ctrl+Alt+d",
+          "correct": false
+        },
+        {
+          "text": "Ctrl+e",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What does the `env` command with no options show?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "The `printenv` command does the same thing as `env` does with no options. But `env` has other utility like adjusting variable values or launching applications with certain environment variables set to a specified value. See man 1 env.",
+      "answers": [
+        {
+          "text": "The value of all variables in the current shell session",
+          "correct": true
+        },
+        {
+          "text": "The value of all variables that apply customization settings for the current shell",
+          "correct": false
+        },
+        {
+          "text": "The value of some important variables for the OS like PATH and PWD",
+          "correct": false
+        },
+        {
+          "text": "Information about the current shell like the shell binary filename and version number",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "If you want to use the value of a certain variable, there is a specific character that must precede the variable name in your command. Which character is it?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "For example, this prints the value of the PWD variable:\n > # echo $PWD\n > /root\n\nFun fact: This is done via bash's parameter expansion. Bash scans the input line and literally replaces \"$PWD\" with the value of the PWD variable before echo is run. The echo program never has any idea you used a variable. If the $ is placed before a string that is not a variable, then bash will expand this to an empty value because this is the value of the undefined variable.\n\n > # echo $COWABUNGA\n > ",
+      "answers": [
+        {
+          "text": "$",
+          "correct": true
+        },
+        {
+          "text": "&",
+          "correct": false
+        },
+        {
+          "text": "^",
+          "correct": false
+        },
+        {
+          "text": "~",
+          "correct": false
+        },
+        {
+          "text": "@",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which file is conventionally used to store variables that should be loaded for each bash session for the user \"kevin\"?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "/home/kevin/.bashrc",
+          "correct": true
+        },
+        {
+          "text": "/home/kevin/.profile",
+          "correct": false
+        },
+        {
+          "text": "/etc/kevin/.bashrc",
+          "correct": false
+        },
+        {
+          "text": "/etc/bash.bashrc",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which file is conventionally used to store variables that should be loaded for each bash session for all users on the system?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "/etc/bash.bashrc",
+          "correct": true
+        },
+        {
+          "text": "/etc/sysconfig/.bashrc",
+          "correct": false
+        },
+        {
+          "text": "/var/run/bash.bashrc",
+          "correct": false
+        },
+        {
+          "text": "/var/run/.bashrc",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which variable is used to configure the shell prompt?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "Fun fact: This is not the only prompt-related variable although it's the only one mentioned in the litmos videos. \n\n - PS0: The value of this variable will print right after you hit enter and before the given command runs.\n - PS2: This value is shown at the beginning of continuation prompts, like when you use \\ on the CLI to start a new line in the same command. Defaults to '>'\n - PS3: This is for interactive menu prompts that are shown on the CLI but it's usually set by the program that is going to send the prompt. Defaults to '#?'\n - PS4: This value shows before the command prints when tracing is enabled in bash with set -x or bash -x. Defaults to +\n\nsee man bash",
+      "answers": [
+        {
+          "text": "PS1",
+          "correct": true
+        },
+        {
+          "text": "ENVAR",
+          "correct": false
+        },
+        {
+          "text": "ps1",
+          "correct": false
+        },
+        {
+          "text": "SHELL",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "At the prompt, how can you tell if you are logged in as root?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "This can of course be changed, but you will see the # by default when using root so you know to be cautious. It will also be red if possible.",
+      "answers": [
+        {
+          "text": "By default, the root prompt is the '#' symbol",
+          "correct": true
+        },
+        {
+          "text": "It says \"root@localhost\" by default",
+          "correct": false
+        },
+        {
+          "text": "The root user session always starts at the \"root\" filesystem /",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "With no arguments, what does the `alias` command do?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "If you want to load ~/.alias, try:\n > # source ~/.alias",
+      "answers": [
+        {
+          "text": "Shows all currently set aliases and their values",
+          "correct": true
+        },
+        {
+          "text": "Loads the alias values from ~/.alias",
+          "correct": false
+        },
+        {
+          "text": "Toggles on/off aliases",
+          "correct": false
+        },
+        {
+          "text": "Prints the value of the shell alias",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which command will unset the alias called \"example\"?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "example=\"\" works for variables but does not interact with the aliases\n\nalias example=null sets the alias \"example\" to the string value \"null\" and not to a null value, so that:\n > # echo example\n > null",
+      "answers": [
+        {
+          "text": "unset example",
+          "correct": false
+        },
+        {
+          "text": "unalias example",
+          "correct": true
+        },
+        {
+          "text": "example=\"\"",
+          "correct": false
+        },
+        {
+          "text": "alias example=null",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which file is used to automatically set aliases whenever a certain user logs in?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "If you want all the users to get the alias, try /etc/profile or a drop-in configuration file in /etc/profile.d/",
+      "answers": [
+        {
+          "text": "~/.alias",
+          "correct": true
+        },
+        {
+          "text": "~/.bashrc",
+          "correct": false
+        },
+        {
+          "text": "~/.profile",
+          "correct": false
+        },
+        {
+          "text": "~/.aliasrc",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which button do you push to perform auto-completion on the CLI?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "Fun fact: There are special characters that change how tab complete works. For example:\n$<tab> will complete shell variables\n~<tab> will complete usernames\n@<tab> will complete hostnames. If this doesn't work, hostcomplete is probably set off, so try shopt -s hostcomplete first.\n\nsee man bash",
+      "answers": [
+        {
+          "text": "tab",
+          "correct": true
+        },
+        {
+          "text": "shift+tab",
+          "correct": false
+        },
+        {
+          "text": "esc",
+          "correct": false
+        },
+        {
+          "text": "ctrl",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of the following can be completed with tab completion?",
+      "type": "multiple",
+      "displayAnswers": 4,
+      "explanation": "tab completes relevant to certain commands are installed by the package that installs that command. ",
+      "answers": [
+        {
+          "text": "hostnames",
+          "correct": true
+        },
+        {
+          "text": "usernames",
+          "correct": true
+        },
+        {
+          "text": "filenames",
+          "correct": true
+        },
+        {
+          "text": "long options",
+          "correct": true
+        },
+        {
+          "text": "commands",
+          "correct": true
+        },
+        {
+          "text": "aliases",
+          "correct": true
+        },
+        {
+          "text": "variables",
+          "correct": true
+        },
+        {
+          "text": "package names in package manager commands",
+          "correct": true
+        },
+        {
+          "text": "systemd units in systemctl commands",
+          "correct": true
+        },
+        {
+          "text": "man pages in man commands",
+          "correct": true
+        },
+        {
+          "text": "short options",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Which long option conventionally prints helpful information about a command?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "--info",
+          "correct": false
+        },
+        {
+          "text": "--man",
+          "correct": false
+        },
+        {
+          "text": "--help",
+          "correct": true
+        },
+        {
+          "text": "--docs",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "How to exit a man page?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "x",
+          "correct": false
+        },
+        {
+          "text": "q",
+          "correct": true
+        },
+        {
+          "text": "c",
+          "correct": false
+        },
+        {
+          "text": "esc",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which pager is used, by default, for reading man pages?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "Fun fact: you can change this by changing MANPAGER",
+      "answers": [
+        {
+          "text": "less",
+          "correct": true
+        },
+        {
+          "text": "more",
+          "correct": false
+        },
+        {
+          "text": "tail",
+          "correct": false
+        },
+        {
+          "text": "bash",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which command can tell you what program is used for a given purpose (keyword)",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "Fun fact: this is the same as `man -k`",
+      "answers": [
+        {
+          "text": "which",
+          "correct": false
+        },
+        {
+          "text": "whatis",
+          "correct": false
+        },
+        {
+          "text": "apropos",
+          "correct": true
+        },
+        {
+          "text": "info",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which command can tell you what a program does in one line?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "Fun fact: identical to man -f",
+      "answers": [
+        {
+          "text": "which",
+          "correct": false
+        },
+        {
+          "text": "whatis",
+          "correct": true
+        },
+        {
+          "text": "apropos",
+          "correct": false
+        },
+        {
+          "text": "info",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which command prints a record of the previous commands run by the current user?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "last",
+          "correct": false
+        },
+        {
+          "text": "history",
+          "correct": true
+        },
+        {
+          "text": "echo $HISTORY",
+          "correct": false
+        },
+        {
+          "text": "printenv",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which file stores the record of commands run by a user?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "~/.bash_history",
+          "correct": true
+        },
+        {
+          "text": "~/.bashrc",
+          "correct": false
+        },
+        {
+          "text": "~/.inputrc",
+          "correct": false
+        },
+        {
+          "text": "~/.input",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which variable stores the number of commands to be kept in the command history?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "HISTSIZE",
+          "correct": true
+        },
+        {
+          "text": "MAXHIST",
+          "correct": false
+        },
+        {
+          "text": "MAX_HISTORY",
+          "correct": false
+        },
+        {
+          "text": "HIST_TOTAL",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What happens if you run `!33`?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "If HIST_VERIFY is set on, the 33rd command in the history will instead be loaded into the current prompt and you can edit it before hitting enter.",
+      "answers": [
+        {
+          "text": "The value of the variable 33 is printed",
+          "correct": false
+        },
+        {
+          "text": "The 33rd variable and its value are printed",
+          "correct": false
+        },
+        {
+          "text": "The value of the alias 33 is printed",
+          "correct": false
+        },
+        {
+          "text": "The 33rd item in the command history is run",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Which directory do absolute filenames start from?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "/ or \"root\" directory",
+          "correct": true
+        },
+        {
+          "text": "user's home directory",
+          "correct": false
+        },
+        {
+          "text": "/root",
+          "correct": false
+        },
+        {
+          "text": "/bin",
+          "correct": false
+        },
+        {
+          "text": "the present working directory",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which directory do relative filenames start from?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "/ or \"root\" directory",
+          "correct": false
+        },
+        {
+          "text": "user's home directory",
+          "correct": false
+        },
+        {
+          "text": "/root",
+          "correct": false
+        },
+        {
+          "text": "/bin",
+          "correct": false
+        },
+        {
+          "text": "the present working directory",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Which flag, when used with the `ls` command, causes the output to show extra details about the files that are listed?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "Stands for \"long format\"",
+      "answers": [
+        {
+          "text": "-h",
+          "correct": false
+        },
+        {
+          "text": "-a",
+          "correct": false
+        },
+        {
+          "text": "-v",
+          "correct": false
+        },
+        {
+          "text": "-l",
+          "correct": true
+        },
+        {
+          "text": "-R",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which flag, when used with the `ls` command, shows numbers in easier-to-read units?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "Stands for \"human readable\"",
+      "answers": [
+        {
+          "text": "-h",
+          "correct": true
+        },
+        {
+          "text": "-a",
+          "correct": false
+        },
+        {
+          "text": "-v",
+          "correct": false
+        },
+        {
+          "text": "-l",
+          "correct": false
+        },
+        {
+          "text": "-R",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which flag, when used with the `ls` command, lists the contents of all sub-directories in addition to the specified directory?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "Stands for \"recursive\"\n\nNot to be confused with little -r which means \"reverse\"",
+      "answers": [
+        {
+          "text": "-h",
+          "correct": false
+        },
+        {
+          "text": "-a",
+          "correct": false
+        },
+        {
+          "text": "-v",
+          "correct": false
+        },
+        {
+          "text": "-l",
+          "correct": false
+        },
+        {
+          "text": "-R",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Which flag, when used with `ls`, shows \"hidden\" files (ones that start with .)",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "Stands for \"all\" I guess?",
+      "answers": [
+        {
+          "text": "-h",
+          "correct": false
+        },
+        {
+          "text": "-a",
+          "correct": true
+        },
+        {
+          "text": "-v",
+          "correct": false
+        },
+        {
+          "text": "-l",
+          "correct": false
+        },
+        {
+          "text": "-R",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What function does the `tree` command offer?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "Used for archiving files from a given directory in the tree format",
+          "correct": false
+        },
+        {
+          "text": "Used for listing files from a given directory and its sub-directories in a tree like format",
+          "correct": true
+        },
+        {
+          "text": "List file system usage information in a recursive tree-like format",
+          "correct": false
+        },
+        {
+          "text": "Makes like a tree and \"leaves\" the current directory to return to the previous one",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which flag, when used with the `tree` command, targets only directories?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "-d",
+          "correct": true
+        },
+        {
+          "text": "-a",
+          "correct": false
+        },
+        {
+          "text": "-L 1",
+          "correct": false
+        },
+        {
+          "text": "-f",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which flag, when used with the `tree` command, includes hidden files?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "\"All\"",
+      "answers": [
+        {
+          "text": "-d",
+          "correct": false
+        },
+        {
+          "text": "-a",
+          "correct": true
+        },
+        {
+          "text": "-L 1",
+          "correct": false
+        },
+        {
+          "text": "-f",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which option, when used with the `tree` command, will not list the contents of subdirectories?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "-L means \"level\", and 1 is the minimum. If it was -L 2, it would only list the sub directories of the given directory and not those sub directories' sub directories.",
+      "answers": [
+        {
+          "text": "-d",
+          "correct": false
+        },
+        {
+          "text": "-a",
+          "correct": false
+        },
+        {
+          "text": "-L 1",
+          "correct": true
+        },
+        {
+          "text": "-f",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which option, when used with `tree`, shows the absolute filepath of all files in the output?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "Stands for \"full path prefix\"",
+      "answers": [
+        {
+          "text": "-d",
+          "correct": false
+        },
+        {
+          "text": "-a",
+          "correct": false
+        },
+        {
+          "text": "-L 1",
+          "correct": false
+        },
+        {
+          "text": "-f",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Which command creates a directory?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "dir",
+          "correct": false
+        },
+        {
+          "text": "newdir",
+          "correct": false
+        },
+        {
+          "text": "mkdir",
+          "correct": true
+        },
+        {
+          "text": "makedir",
+          "correct": false
+        },
+        {
+          "text": "make",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which command's sole purpose is to remove directories?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "(rm does stuff other than remove directories)\n\nFun fact: directory has got to be empty for this to work, even when --ignore-fail-on-non-empty is used",
+      "answers": [
+        {
+          "text": "deldir",
+          "correct": false
+        },
+        {
+          "text": "deletedir",
+          "correct": false
+        },
+        {
+          "text": "rmdir",
+          "correct": false
+        },
+        {
+          "text": "removedir",
+          "correct": false
+        },
+        {
+          "text": "rm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which flag, when used with `rm`, allows it to remote directories?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "Stands for recursive and has the equivalent long option --recursive. The long options, as far as I can tell, are not in the `man rm` manual, but they are shown in the output of `rm --help`\n\nFun fact: -R works too and does the same thing",
+      "answers": [
+        {
+          "text": "-r",
+          "correct": true
+        },
+        {
+          "text": "-f",
+          "correct": false
+        },
+        {
+          "text": "-d",
+          "correct": false
+        },
+        {
+          "text": "-i",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which flag, when used with `rm`, allows it to remove non-empty files without first prompting the user?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "Stands for \"force\" and has the equivalent long option --force. The long options, as far as I can tell, are not in the `man rm` manual, but they are shown in the output of `rm --help`",
+      "answers": [
+        {
+          "text": "-r",
+          "correct": false
+        },
+        {
+          "text": "-f",
+          "correct": true
+        },
+        {
+          "text": "-d",
+          "correct": false
+        },
+        {
+          "text": "-i",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which flag, when used with the `rm` command, causes it to prompt the user for confirmation on each file that is deleted?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "Stands for \"interactive\". \n\nFun fact: There is also a long option --interactive that has the optional parameter \"WHEN\" that can be set like:\nrm --interactive=<WHEN>\n\n<WHEN> can be \"never\", \"once\", or \"always\". \"always\" is the default and works just like -i. \"once\" only prompts when the rm command would remove three or more files, and works the same as -I. If you think this is confusing and weird you are not alone.",
+      "answers": [
+        {
+          "text": "-r",
+          "correct": false
+        },
+        {
+          "text": "-f",
+          "correct": false
+        },
+        {
+          "text": "-d",
+          "correct": false
+        },
+        {
+          "text": "-i",
+          "correct": true
+        }
+      ]
+    }
+  ]
+}
