@@ -446,7 +446,7 @@
     {
       "question": "At the prompt, how can you tell if you are logged in as root?",
       "type": "single",
-      "displayAnswers": 4,
+      "displayAnswers": 3,
       "explanation": "This can of course be changed, but you will see the # by default when using root so you know to be cautious. It will also be red if possible.",
       "answers": [
         {
@@ -562,7 +562,7 @@
     {
       "question": "Which of the following can be completed with tab completion?",
       "type": "multiple",
-      "displayAnswers": 4,
+      "displayAnswers": 11,
       "explanation": "tab completes relevant to certain commands are installed by the package that installs that command. ",
       "answers": [
         {
@@ -1159,7 +1159,7 @@
         },
         {
           "text": "rmdir",
-          "correct": false
+          "correct": true
         },
         {
           "text": "removedir",
