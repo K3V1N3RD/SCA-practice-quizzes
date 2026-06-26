@@ -4,7 +4,7 @@
     "title": "The Command Line",
     "description": "These questions are intended to cover the content of Section 3 The Command Line from the SLE201v15 course on Litmos",
     "author": "Marshall Banana",
-    "creationDate": "2026-06-25"
+    "creationDate": "2026-06-26"
   },
   "generator": {
     "application": "LocalQuizEngine",
@@ -128,7 +128,7 @@
       ]
     },
     {
-      "question": "Most commands have both short and long options. Do you need to use only short or long options in each command? Or can a single command contain both long and short options?",
+      "question": "Is it true that you need to use only short or long options in each command? Or can a single command contain both long and short options?",
       "type": "single",
       "displayAnswers": 4,
       "explanation": "If a command has both short and long options, these can always be mixed. Some commands only have short options, like `cd` and `umask`, but these seem to be really rare and I think they are always shell built-ins and not standalone programs.",
@@ -244,7 +244,7 @@
       ]
     },
     {
-      "question": "Control characters are all sent using combinations of the Ctrl key and another key.",
+      "question": "True or False: Control characters are only sent using combinations of the Ctrl key and another key.",
       "type": "single",
       "displayAnswers": 4,
       "explanation": "Many control characters are sent with Ctrl+ combinations, but some are sent by other means like pressing TAB (that's for tab completion), ENTER (for newline), and ESC (used by bash for other combinations such as ESC + .). There are also Alt+ key combinations that send control characters, but these are not the same as the Ctrl+ combinations. Control characters may also be sent using octal or hexadecimal values that get interpreted and consumed by the shell, so they can be sent by some other processes. For example, you can get `echo` to send the beep octet to the shell by running this command:\necho -e \"\\007\"\n\nThis is the mechanism by which terminal emulators produce the charming chimes that let you know you pushed backspace too many times or whatever.\n\nFun fact: the actual octal escape sequence used in the echo example is \"07\". The -e flag enables escape characters, and the combination \"\\0\" is how you tell the echo program to interpret the argument as an octal escape sequence. ",
@@ -254,7 +254,7 @@
           "correct": false
         },
         {
-          "text": "False, sometimes other keys or actions will cause control characters to be sent.",
+          "text": "False, there are other keys and signals that will cause control characters to be sent.",
           "correct": true
         },
         {
@@ -372,7 +372,7 @@
       ]
     },
     {
-      "question": "Which file is conventionally used to store variables that should be loaded for each bash session for the user \"kevin\"?",
+      "question": "Which file is used by default to store variables that should be loaded for each bash session for the user \"kevin\"?",
       "type": "single",
       "displayAnswers": 4,
       "explanation": "",
@@ -396,7 +396,7 @@
       ]
     },
     {
-      "question": "Which file is conventionally used to store variables that should be loaded for each bash session for all users on the system?",
+      "question": "Which file is used by default to store variables that should be loaded for each bash session for all users on the system?",
       "type": "single",
       "displayAnswers": 4,
       "explanation": "",
@@ -539,7 +539,7 @@
       "question": "Which button do you push to perform auto-completion on the CLI?",
       "type": "single",
       "displayAnswers": 4,
-      "explanation": "Fun fact: There are special characters that change how tab complete works. For example:\n$<tab> will complete shell variables\n~<tab> will complete usernames\n@<tab> will complete hostnames. If this doesn't work, hostcomplete is probably set off, so try shopt -s hostcomplete first.\n\nsee man bash",
+      "explanation": "Fun fact: There are special characters that change how tab complete works. For example:\n`$<tab>` will complete shell variables\n`~<tab>` will complete usernames\n`@<tab>` will complete hostnames. If this doesn't work, hostcomplete is probably set off, so try shopt -s hostcomplete first.\n\nsee man bash",
       "answers": [
         {
           "text": "tab",
@@ -663,7 +663,7 @@
       "question": "Which pager is used, by default, for reading man pages?",
       "type": "single",
       "displayAnswers": 4,
-      "explanation": "Fun fact: you can change this by changing MANPAGER",
+      "explanation": "Fun fact: you can change this by changing the MANPAGER variable",
       "answers": [
         {
           "text": "less",
@@ -807,7 +807,7 @@
       "question": "What happens if you run `!33`?",
       "type": "single",
       "displayAnswers": 4,
-      "explanation": "If HIST_VERIFY is set on, the 33rd command in the history will instead be loaded into the current prompt and you can edit it before hitting enter.",
+      "explanation": "If HIST_VERIFY is set on, the command in the history will instead be loaded into the current prompt instead of being run, allowing you to edit the command from history before running it.",
       "answers": [
         {
           "text": "The value of the variable 33 is printed",
@@ -971,7 +971,7 @@
       "question": "Which flag, when used with `ls`, shows \"hidden\" files (ones that start with .)",
       "type": "single",
       "displayAnswers": 4,
-      "explanation": "Stands for \"all\" I guess?",
+      "explanation": "Stands for \"all\"",
       "answers": [
         {
           "text": "-h",
@@ -1047,7 +1047,7 @@
       "question": "Which flag, when used with the `tree` command, includes hidden files?",
       "type": "single",
       "displayAnswers": 4,
-      "explanation": "\"All\"",
+      "explanation": "Stands for \"All\"",
       "answers": [
         {
           "text": "-d",
@@ -1071,7 +1071,7 @@
       "question": "Which option, when used with the `tree` command, will not list the contents of subdirectories?",
       "type": "single",
       "displayAnswers": 4,
-      "explanation": "-L means \"level\", and 1 is the minimum. If it was -L 2, it would only list the sub directories of the given directory and not those sub directories' sub directories.",
+      "explanation": "-L means \"level\", and 1 is the minimum. -L 2 means 2 layers deep, so it would list the contents of the subdirectories of the given directory.",
       "answers": [
         {
           "text": "-d",
@@ -1175,7 +1175,7 @@
       "question": "Which flag, when used with `rm`, allows it to remote directories?",
       "type": "single",
       "displayAnswers": 4,
-      "explanation": "Stands for recursive and has the equivalent long option --recursive. The long options, as far as I can tell, are not in the `man rm` manual, but they are shown in the output of `rm --help`\n\nFun fact: -R works too and does the same thing",
+      "explanation": "Stands for recursive and has the equivalent long option --recursive. The long options don't seem to be in the `man rm` manual, but they are shown in the output of `rm --help`\n\nFun fact: -R does the same thing",
       "answers": [
         {
           "text": "-r",
@@ -1199,7 +1199,7 @@
       "question": "Which flag, when used with `rm`, allows it to remove non-empty files without first prompting the user?",
       "type": "single",
       "displayAnswers": 4,
-      "explanation": "Stands for \"force\" and has the equivalent long option --force. The long options, as far as I can tell, are not in the `man rm` manual, but they are shown in the output of `rm --help`",
+      "explanation": "Stands for \"force\" and has the equivalent long option --force. The long options are shown in the output of `rm --help`",
       "answers": [
         {
           "text": "-r",
@@ -1223,7 +1223,7 @@
       "question": "Which flag, when used with the `rm` command, causes it to prompt the user for confirmation on each file that is deleted?",
       "type": "single",
       "displayAnswers": 4,
-      "explanation": "Stands for \"interactive\". \n\nFun fact: There is also a long option --interactive that has the optional parameter \"WHEN\" that can be set like:\nrm --interactive=<WHEN>\n\n<WHEN> can be \"never\", \"once\", or \"always\". \"always\" is the default and works just like -i. \"once\" only prompts when the rm command would remove three or more files, and works the same as -I. If you think this is confusing and weird you are not alone.",
+      "explanation": "Stands for \"interactive\". \n\nFun fact: There is also a long option --interactive that has the optional parameter \"WHEN\" that can be set like:\nrm --interactive=<WHEN>\n\n<WHEN> can be \"never\", \"once\", or \"always\". \"always\" is the default and works just like -i. \"once\" only prompts when the rm command would remove three or more files, and works the same as -I.",
       "answers": [
         {
           "text": "-r",
@@ -1240,6 +1240,542 @@
         {
           "text": "-i",
           "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Which flag, when used with the `cp` command, will allow for the copying of directories and its contents?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "-r stands for recursive again. -R does the same thing. The man page only shows -R but the litmos test shows -r. `cp --help` shows both.",
+      "answers": [
+        {
+          "text": "-r",
+          "correct": true
+        },
+        {
+          "text": "-i",
+          "correct": false
+        },
+        {
+          "text": "-v",
+          "correct": false
+        },
+        {
+          "text": "-p",
+          "correct": false
+        },
+        {
+          "text": "-n",
+          "correct": false
+        },
+        {
+          "text": "-u",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which flag, when used with `cp`, causes the copied file to preserve the permissions settings of the original file?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "-r",
+          "correct": false
+        },
+        {
+          "text": "-i",
+          "correct": false
+        },
+        {
+          "text": "-v",
+          "correct": false
+        },
+        {
+          "text": "-p",
+          "correct": true
+        },
+        {
+          "text": "-n",
+          "correct": false
+        },
+        {
+          "text": "-u",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which flag, when used with the `cp` command, preserves the original file's group ID and user ID?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "-r",
+          "correct": false
+        },
+        {
+          "text": "-i",
+          "correct": false
+        },
+        {
+          "text": "-v",
+          "correct": false
+        },
+        {
+          "text": "-p",
+          "correct": true
+        },
+        {
+          "text": "-n",
+          "correct": false
+        },
+        {
+          "text": "-u",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which flag, when used with `cp`, will overwrite the copy destination if that file already exists?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "-r",
+          "correct": false
+        },
+        {
+          "text": "-i",
+          "correct": false
+        },
+        {
+          "text": "-v",
+          "correct": false
+        },
+        {
+          "text": "-p",
+          "correct": false
+        },
+        {
+          "text": "-n",
+          "correct": true
+        },
+        {
+          "text": "-u",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which flag, when used with `cp`, will prompt the user for confirmation before overwriting a file?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "Stands for \"interactive\"",
+      "answers": [
+        {
+          "text": "-r",
+          "correct": false
+        },
+        {
+          "text": "-i",
+          "correct": true
+        },
+        {
+          "text": "-v",
+          "correct": false
+        },
+        {
+          "text": "-p",
+          "correct": false
+        },
+        {
+          "text": "-n",
+          "correct": false
+        },
+        {
+          "text": "-u",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which flag, when used with `mv`, will prompt the user before overwriting a file?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "Stands for \"interactive\"",
+      "answers": [
+        {
+          "text": "-i",
+          "correct": true
+        },
+        {
+          "text": "-f",
+          "correct": false
+        },
+        {
+          "text": "-n",
+          "correct": false
+        },
+        {
+          "text": "-u",
+          "correct": false
+        },
+        {
+          "text": "-v",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which flag, when used with `cp`, will print a message for every file that is copied?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "Stands for \"verbose\"",
+      "answers": [
+        {
+          "text": "-r",
+          "correct": false
+        },
+        {
+          "text": "-i",
+          "correct": false
+        },
+        {
+          "text": "-v",
+          "correct": true
+        },
+        {
+          "text": "-p",
+          "correct": false
+        },
+        {
+          "text": "-n",
+          "correct": false
+        },
+        {
+          "text": "-u",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which flag, when used with `mv`, will move only if there is no destination file or if the source file is newer than the destination file?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "Stands for \"update\"",
+      "answers": [
+        {
+          "text": "-i",
+          "correct": false
+        },
+        {
+          "text": "-f",
+          "correct": false
+        },
+        {
+          "text": "-n",
+          "correct": false
+        },
+        {
+          "text": "-u",
+          "correct": true
+        },
+        {
+          "text": "-v",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of the following commands print the contents of a file?",
+      "type": "multiple",
+      "displayAnswers": 4,
+      "explanation": "`echo` will print a string but not the contents of a file. If you run `echo example.txt`, it will print the string \"example.txt\" and not the contents of the example.txt file.",
+      "answers": [
+        {
+          "text": "cat",
+          "correct": true
+        },
+        {
+          "text": "head",
+          "correct": true
+        },
+        {
+          "text": "tail",
+          "correct": true
+        },
+        {
+          "text": "echo",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of the following commands can take the -f flag to print updates that are saved to the target file?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "`tail -f <filename>` will \"follow\" the file and print any lines that are added to the file. very useful for keeping track of updates to log files",
+      "answers": [
+        {
+          "text": "cat",
+          "correct": false
+        },
+        {
+          "text": "head",
+          "correct": false
+        },
+        {
+          "text": "tail",
+          "correct": true
+        },
+        {
+          "text": "echo",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which flag, when used with the `head` or `tail` command, will set how many lines are printed?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "-f",
+          "correct": false
+        },
+        {
+          "text": "-n",
+          "correct": true
+        },
+        {
+          "text": "-c",
+          "correct": false
+        },
+        {
+          "text": "-v",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which flag, when used with either the `head` or `tail` command, will set how many characters/bytes will be printed?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "C is for \"characters\" even though the man page and --help text say it stands for bytes",
+      "answers": [
+        {
+          "text": "-f",
+          "correct": false
+        },
+        {
+          "text": "-n",
+          "correct": false
+        },
+        {
+          "text": "-c",
+          "correct": true
+        },
+        {
+          "text": "-v",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What does the -n flag do with the `cat` command?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "Sets the number of lines to show",
+          "correct": false
+        },
+        {
+          "text": "Outputs only new lines",
+          "correct": false
+        },
+        {
+          "text": "Shows newline and whitespace characters",
+          "correct": false
+        },
+        {
+          "text": "Add line numbers to the output",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Which commands can display output in pages that you may scroll through?",
+      "type": "multiple",
+      "displayAnswers": 5,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "cat",
+          "correct": false
+        },
+        {
+          "text": "head",
+          "correct": false
+        },
+        {
+          "text": "tail",
+          "correct": false
+        },
+        {
+          "text": "less",
+          "correct": true
+        },
+        {
+          "text": "more",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Which pager is more fully featured?",
+      "type": "single",
+      "displayAnswers": 2,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "less",
+          "correct": true
+        },
+        {
+          "text": "more",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which shell operator(s) will run commands consecutively without redirecting the pipe?",
+      "type": "multiple",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": ";",
+          "correct": true
+        },
+        {
+          "text": "&&",
+          "correct": true
+        },
+        {
+          "text": "||",
+          "correct": true
+        },
+        {
+          "text": "<",
+          "correct": false
+        },
+        {
+          "text": "2>&1",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which standard stream has the file descriptor 0?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "Standard Input has the file descriptor 0. Input comes first in the list.",
+      "answers": [
+        {
+          "text": "stdin",
+          "correct": true
+        },
+        {
+          "text": "stdout",
+          "correct": false
+        },
+        {
+          "text": "stderr",
+          "correct": false
+        },
+        {
+          "text": "PWD",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which standard stream has the file descriptor 1?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "Standard Error has the file descriptor 1. ",
+      "answers": [
+        {
+          "text": "stdin",
+          "correct": false
+        },
+        {
+          "text": "stdout",
+          "correct": true
+        },
+        {
+          "text": "stderr",
+          "correct": false
+        },
+        {
+          "text": "PWD",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which standard stream has the file descriptor 2?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "Standard Error has file descriptor 2. It is the last standard stream.",
+      "answers": [
+        {
+          "text": "stdin",
+          "correct": false
+        },
+        {
+          "text": "stdout",
+          "correct": false
+        },
+        {
+          "text": "stderr",
+          "correct": true
+        },
+        {
+          "text": "PWD",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of the following will redirect stderr?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "File descriptor for stderr is 2. So to redirect, place the file descriptor in front of the >\n\n`example 2> /dev/null`\n\nThis will redirect the stderr from `example` to /dev/null ",
+      "answers": [
+        {
+          "text": ">>",
+          "correct": false
+        },
+        {
+          "text": ">",
+          "correct": false
+        },
+        {
+          "text": "2>",
+          "correct": true
+        },
+        {
+          "text": "||",
+          "correct": false
         }
       ]
     }
