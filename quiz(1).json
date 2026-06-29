@@ -1,0 +1,531 @@
+{
+  "formatVersion": 1,
+  "metadata": {
+    "title": "S4 The Linux File System",
+    "description": "Quizzes about the content in section 4 of the SCA 15 litmos lessons",
+    "author": "Kevin",
+    "creationDate": "2026-06-29"
+  },
+  "generator": {
+    "application": "LocalQuizEngine",
+    "version": "1.0"
+  },
+  "questions": [
+    {
+      "question": "The Filesystem Hierarchy Standard (FHS) describes where to store files from which of these sources?",
+      "type": "multiple",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "Local files",
+          "correct": false
+        },
+        {
+          "text": "Linux distribution",
+          "correct": true
+        },
+        {
+          "text": "Third-party software",
+          "correct": true
+        },
+        {
+          "text": "Dynamic data from the kernel",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Where on the file system structure is /",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "top",
+          "correct": true
+        },
+        {
+          "text": "bottom",
+          "correct": false
+        },
+        {
+          "text": "left",
+          "correct": false
+        },
+        {
+          "text": "trunk",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Where on the file system structure is /root",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "top",
+          "correct": false
+        },
+        {
+          "text": "root",
+          "correct": false
+        },
+        {
+          "text": "under /",
+          "correct": true
+        },
+        {
+          "text": "above /",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which directory is appropriate for storing programs",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "bin",
+          "correct": true
+        },
+        {
+          "text": "etc",
+          "correct": false
+        },
+        {
+          "text": "usr",
+          "correct": false
+        },
+        {
+          "text": "run",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which directory stores binaries that are needed during boot",
+      "type": "single",
+      "displayAnswers": 3,
+      "explanation": "/bin is on the root filesystem and so is the most accessible\n/usr is designed so that it could be stored on a separate filesystem or storage device that might not be accessible during boot, so this is why the separation exists",
+      "answers": [
+        {
+          "text": "/usr/bin",
+          "correct": false
+        },
+        {
+          "text": "/bin",
+          "correct": true
+        },
+        {
+          "text": "/usr/local/bin",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What kind of commands are in sbin directories?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "Commands only runable by root user",
+          "correct": true
+        },
+        {
+          "text": "Shell commands",
+          "correct": false
+        },
+        {
+          "text": "Scripts",
+          "correct": false
+        },
+        {
+          "text": "Symbolic commands",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which directory is for mounting storage temporarily?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "/run/media",
+          "correct": false
+        },
+        {
+          "text": "/var/tmp",
+          "correct": false
+        },
+        {
+          "text": "/mnt",
+          "correct": true
+        },
+        {
+          "text": "/tmp",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which directory is for configuration files?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "/etc",
+          "correct": true
+        },
+        {
+          "text": "/usr",
+          "correct": false
+        },
+        {
+          "text": "/lib",
+          "correct": false
+        },
+        {
+          "text": "/var/sys",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is /var/media/<username> for?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "Automatically mounted removable storage",
+          "correct": true
+        },
+        {
+          "text": "Media files like video and music stored by a certain user",
+          "correct": false
+        },
+        {
+          "text": "Media assets for programs installed by a certain user",
+          "correct": false
+        },
+        {
+          "text": "Media assets for the desktop environment to be used with a certain user",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which directory is intended to store data that is expected to change while the system is running.",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "/var",
+          "correct": true
+        },
+        {
+          "text": "/tmp",
+          "correct": false
+        },
+        {
+          "text": "/etc",
+          "correct": false
+        },
+        {
+          "text": "/opt",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which directory is for third-party programs (not provided by the distribution)",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "/usr/local/bin",
+          "correct": false
+        },
+        {
+          "text": "/opt",
+          "correct": true
+        },
+        {
+          "text": "/sbin",
+          "correct": false
+        },
+        {
+          "text": "/usr/share",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which directory is intended to store files for the running Linux system",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "Stands for \"Unix System Resources\", as in \"resources for the Unix system\".",
+      "answers": [
+        {
+          "text": "/run",
+          "correct": false
+        },
+        {
+          "text": "/usr",
+          "correct": true
+        },
+        {
+          "text": "/etc",
+          "correct": false
+        },
+        {
+          "text": "/boot",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of the following are files?",
+      "type": "multiple",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "pipes",
+          "correct": true
+        },
+        {
+          "text": "sockets",
+          "correct": true
+        },
+        {
+          "text": "storage devices",
+          "correct": true
+        },
+        {
+          "text": "network devices",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "A filename points to which of the following?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "inode number",
+          "correct": true
+        },
+        {
+          "text": "hard drive sector",
+          "correct": false
+        },
+        {
+          "text": "directory metadata",
+          "correct": false
+        },
+        {
+          "text": "file metadata",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of following are for making a file accessible from some other point on the filesystem?",
+      "type": "single",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "links",
+          "correct": true
+        },
+        {
+          "text": "pipes",
+          "correct": false
+        },
+        {
+          "text": "sockets",
+          "correct": false
+        },
+        {
+          "text": "directories",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of these links to a file's filename?",
+      "type": "single",
+      "displayAnswers": 2,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "symbolic link",
+          "correct": true
+        },
+        {
+          "text": "hard link",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of these links to an inode?",
+      "type": "single",
+      "displayAnswers": 2,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "hard link",
+          "correct": true
+        },
+        {
+          "text": "symbolic link",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of these can link to a directory?",
+      "type": "single",
+      "displayAnswers": 2,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "hard link",
+          "correct": false
+        },
+        {
+          "text": "symbolic link",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Which of these can only link to files that are on the same filesystem as the link?",
+      "type": "single",
+      "displayAnswers": 2,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "hard link",
+          "correct": true
+        },
+        {
+          "text": "symbolic link",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of these are for inter process communication (IPC)?",
+      "type": "multiple",
+      "displayAnswers": 4,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "character devices",
+          "correct": false
+        },
+        {
+          "text": "pipes",
+          "correct": true
+        },
+        {
+          "text": "sockets",
+          "correct": true
+        },
+        {
+          "text": "links",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What are block devices?",
+      "type": "single",
+      "displayAnswers": 3,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "They store groups of inodes",
+          "correct": false
+        },
+        {
+          "text": "They store files in an assigned directory/mount point",
+          "correct": false
+        },
+        {
+          "text": "They are storage devices that may contain filesystems",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "What are character devices?",
+      "type": "single",
+      "displayAnswers": 3,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "Input/output devices that trasmit one character at a time",
+          "correct": true
+        },
+        {
+          "text": "network devices",
+          "correct": false
+        },
+        {
+          "text": "dynamic filesystems created by the kernel",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of these enables bi-directional communication between processes?",
+      "type": "single",
+      "displayAnswers": 2,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "sockets",
+          "correct": true
+        },
+        {
+          "text": "pipes",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of these transmits data on a First-In-First-Out (FIFO) basis?",
+      "type": "single",
+      "displayAnswers": 2,
+      "explanation": "",
+      "answers": [
+        {
+          "text": "sockets",
+          "correct": false
+        },
+        {
+          "text": "pipes",
+          "correct": true
+        }
+      ]
+    }
+  ]
+}
